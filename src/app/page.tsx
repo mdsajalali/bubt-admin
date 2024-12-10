@@ -2,26 +2,26 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <div className="min-h-screen flex px-4 md:px-0 items-center justify-center bg-gray-900">
-      <div className="w-full max-w-sm bg-gray-800 rounded-lg shadow-md p-6">
+    <div className="min-h-screen flex px-4 md:px-0 items-center justify-center bg-white">
+      <div className="w-full max-w-sm bg-white rounded-lg shadow-xl p-6">
         {/* Header */}
-        <div className="bg-blue-700 text-white text-center py-2 rounded-t-lg">
-          <h1 className="font-semibold text-lg">BUBT CSE ADMIN</h1>
+        <div className="bg-gray-800 text-white text-center py-3 rounded-t-lg shadow-md">
+          <h1 className="font-semibold text-xl">BUBT CSE ADMIN</h1>
         </div>
 
         {/* Form */}
         <form className="mt-6">
-          <div className="mb-4">
+          <div className="mb-6">
             <label
               htmlFor="username"
-              className="block text-sm font-medium text-gray-300"
+              className="block text-sm font-medium text-gray-700"
             >
               Username:
             </label>
             <input
               id="username"
               type="text"
-              className="mt-1 block w-full px-3 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-2 block w-full px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
               placeholder="Enter username"
             />
           </div>
@@ -29,14 +29,14 @@ export default function Login() {
           <div className="mb-6">
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-300"
+              className="block text-sm font-medium text-gray-700"
             >
               Password:
             </label>
             <input
               id="password"
               type="password"
-              className="mt-1 block w-full px-3 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-2 block w-full px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
               placeholder="Enter password"
             />
           </div>
@@ -44,7 +44,7 @@ export default function Login() {
           <Link href="/dashboard">
             <button
               type="submit"
-              className="w-full px-4 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 bg-gray-600 text-white font-medium rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
             >
               Log in
             </button>
